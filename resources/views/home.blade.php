@@ -7,10 +7,10 @@
 
 @section('content')
 <div class="container my-5">
-    <h1>{{ $title }}</h1>
+    <h1>HOME</h1>
     <img src="{{ Vite::asset('resources/img/colibri.jpg') }}" alt="" class="img-fluid">
     <p>
-        {{ $text }}
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aspernatur sed voluptatum id quia officiis adipisci praesentium molestiae vel fugit eum at, nisi sapiente iure ratione facere velit cumque accusantium?
     </p>
 </div>
 
