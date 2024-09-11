@@ -8,9 +8,11 @@ class PageController extends Controller
 {
      // il petodo index è il metodo che si usa per la home
      public function index(){
+         return view('home');
+    }
+    public function movie(){
         $movies = Movie::all();
-        dd($movies);
-        return view('home');
+        return view('movies');
     }
    
     public function about(){
