@@ -2,7 +2,7 @@
 @extends('layouts.main')
 
 @section('content')
-<div class="container my-5">
+<!-- <div class="container my-5">
     <h1>Film</h1>
     <table class="table">
   <thead>
@@ -27,10 +27,23 @@
         </tr>
     @endforeach
   </tbody>
-</table>
-    
+</table> -->
+<div class="container">
+  @foreach($movies as $movie)
+    <div class="card" style="width: 18rem;">
+      <div class="card-header">
+        <h3>Titolo: {{$movie->title}}</h3>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">ID: {{$movie->id}}</li>
+        <li class="list-group-item">Titolo originale: {{$movie->original_title}}</li>
+        <li class="list-group-item">Paese: {{$movie->nationality}}</li>
+        <li class="list-group-item">Data: {{$movie->date}}</li>
+        <li class="list-group-item">Voto: {{$movie->vote}}</li>
+      </ul>
+    </div>
+  @endforeach    
 </div>
-
 @endsection
 
 
